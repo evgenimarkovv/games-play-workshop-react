@@ -1,0 +1,18 @@
+{
+    "75c6d513-9336-4ed2-9ec0-bb6ad97229da": {
+        "title": "Test game",
+        "category": "Fantasy",
+        "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.wallpapers13.com%2Fwp-content%2Fuploads%2F2015%2F11%2FFantasy-fantasy-35230404-2844-16001-1920x1440.jpg&f=1&nofb=1&ipt=04c67ef838e5478fa001d1edc2034421e3869ebf390575a0396f8f91c90a4e2e&ipo=images",
+        "maxLevel": "112",
+        "summary": "test",
+        "_id": "75c6d513-9336-4ed2-9ec0-bb6ad97229da"
+    },
+    "59c9499d-4221-42fc-b3f2-395ac2b922bc": {
+        "title": "Action game",
+        "category": "Action",
+        "maxLevel": "40",
+        "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.iXfjroOPt14_-V-CS9xW6wHaEo%26pid%3DApi&f=1&ipt=a5da8cdd5cca8989e3a21ff07202d04cbcd001caeea1948bcfdb544979f1c0c9&ipo=images",
+        "summary": "n/a",
+        "_id": "59c9499d-4221-42fc-b3f2-395ac2b922bc"
+    }
+}

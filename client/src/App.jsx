@@ -8,6 +8,7 @@ import Login from './components/login/Login.jsx';
 import Register from './components/register/Register.jsx';
 import GameDetails from './components/game-details/GameDetails.jsx';
 import { useState } from 'react';
+import AutContext from './contexts/authContext.js';
 
 
 function App() {
@@ -17,19 +18,19 @@ function App() {
     };
 
     return (
-        <div id="box">
-            <Header />
-            <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/games' element={<GameList />} />
-                <Route path='/games/create' element={<GameCreate />} />
-                <Route path='/login' element={<Login loginSubmitHandled={loginSubmitHandled} />} />
-                <Route path='/register' element={<Register />} />
-                <Route path='/games/:gameId/details' element={<GameDetails />} />
-
-            </Routes>
-
-        </div>
+        <AutContext.Provider value={{ loginSubmitHandled }}>
+            <div id="box">
+                <Header />
+                <Routes>
+                    <Route path='/' element={<Home />} />
+                    <Route path='/games' element={<GameList />} />
+                    <Route path='/games/create' element={<GameCreate />} />
+                    <Route path='/login' element={<Login />} />
+                    <Route path='/register' element={<Register />} />
+                    <Route path='/games/:gameId/details' element={<GameDetails />} />
+                </Routes>
+            </div>
+        </AutContext.Provider >
 
     );
 }

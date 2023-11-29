@@ -24,15 +24,17 @@ function App() {
     };
 
     const registerSubmitHandler = async (values) => {
-        console.log(values);
+        const result = await autService.register(values.email, values.password);
+        setAuth(result);
+        navigate(Path.Home);
     };
 
     const values = {
         loginSubmitHandled,
         registerSubmitHandler,
-        username: auth.username,
+        username: auth.username || auth.email,
         email: auth.email,
-        isAuthenticated: !!auth.username,
+        isAuthenticated: !!auth.email,
     };
 
     return (

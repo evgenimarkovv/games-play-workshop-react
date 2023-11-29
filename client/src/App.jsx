@@ -23,12 +23,17 @@ function App() {
         navigate(Path.Home);
     };
 
+    const registerSubmitHandler = async (values) => {
+        console.log(values);
+    };
+
     const values = {
         loginSubmitHandled,
+        registerSubmitHandler,
         username: auth.username,
         email: auth.email,
         isAuthenticated: !!auth.username,
-    }
+    };
 
     return (
         <AutContext.Provider value={values}>
